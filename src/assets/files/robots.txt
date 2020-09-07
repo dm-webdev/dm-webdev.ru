@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: */mail.php
+Disallow: */README.md
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /js/
+Disallow: /.git/
+Disallow: /css/
+Sitemap: https://www.dm-webdev.ru/sitemap.txt

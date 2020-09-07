@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Добро пожаловать на персональную страница начинающего веб-разработчка, Денис Мироненко. Адаптивная веб-верстка и разработка.">
+  <meta name="keywords" content="Мироненко, Денис, веб, web, верстка, development, разработка, layout, HTML, CSS, JS">
+  <meta name="yandex-verification" content="f5f386dca2f94603" />
+  <title>Denis Mironenko web-development</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">  
+  <link rel="stylesheet" type="text/css" href="css/icofont.min.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166045127-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166045127-1');
+</script> 
+</head>
+
+<body> 
+    <header>      
+      <div class="top-bar">
+        <div class="top-bar__container">
+          <h1>Денис Мироненко</h1>
+
+          <ul class="communication__link">
+            <li>
+              <a class="viber" href="viber://chat?number=79805592680" target="_blank">
+                <i class="icofont-brand-viber"></i>
+              </a>
+            </li>
+            <li>
+              <a class="whatsapp" href="https://api.whatsapp.com/send?phone=79805592680&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83..." target="_blank">
+                <i class="icofont-brand-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a class="telegramm" href="https://teleg.run/dmwebdev" target="_blank">
+                <i class="icofont-paper-plane"></i>
+              </a>
+            </li>
+            <li>
+              <a class="mail" href="mailto:dmwebdev@mail.ru" target="_blank">
+                <i class="icofont-send-mail"></i>
+              </a>
+            </li>           
+          </ul>
+        </div>               
+      </div>
+    </header>
+
+    <nav class="nav-top">
+      <div class="nav-top__container">
+        <button class="nav-top__mobmenu" aria-label="open menu">
+          <span class="mobmenu__link" aria-hidden="true"></span>
+          <span class="mobmenu__link" aria-hidden="true"></span>
+          <span class="mobmenu__link" aria-hidden="true"></span>
+        </button>
+  
+        <ul class="nav-top__left">
+          <li>
+            <a class="link_white" href="#to-do__anchor">Услуги</a>
+          </li>
+          <li>
+            <a class="link_white" href="#portfolio__anchor">Портфолио</a>
+          </li>
+          <li>
+            <a class="link_white" href="#price__anchor">Стоимость</a>
+          </li>
+        </ul>
+         
+        <ul class="nav-top__right">
+          <li>
+            <a class="link_white" href="tel:+79805592680">+7-980-559-26-80</a>
+          </li>
+          <li>
+            <button class="button__nav get-call" type="button">Заказать звонок</button>
+          </li>
+        </ul>
+      </div>      
+    </nav>
+
+    <main>  
+      <section class="present">
+        <div class="present__container">
+          <div class="present__container__left">
+            <h2>Денис Мироненко</h2>
+  
+            <p>Начинающий веб-разработчик и верстальщик</p>
+    
+            <button class="get-more button_size button_light" type="button">Узнать больше</button>
+          </div>
+          
+          <img src="img/denis.png" alt="Денис Мироненко">
+        </div>       
+      </section>
+
+      <section>
+        <div class="to-do__container">
+          <h3 id="to-do__anchor">Что я делаю</h3>
+          <ul>
+            <li>
+              <i class="icofont-web to-do_icon"></i>
+  
+              <p class="to-do_text">Верска лендинг-страниц и сайтов</p>
+            </li>
+            <li>
+              <i class="icofont-responsive to-do_icon"></i>
+  
+              <p class="to-do_text">Адаптивная верска под все браузеры и устройства</p>
+            </li>
+            <li>
+              <i class="icofont-terminal to-do_icon"></i>
+  
+              <p class="to-do_text">Frontend-разработка и программирование</p>            
+            </li>
+            <li>
+              <i class="icofont-architecture-alt to-do_icon"></i>
+  
+              <p class="to-do_text">Исправление и доработка существующей верстки</p>
+            </li>
+          </ul>
+  
+          <button class="get-offer button_size button_light" type="button">Задать вопрос</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="portfolio__container">  
+          <h3 id="portfolio__anchor">Примеры моих работ</h3>
+
+          <div class="swiper-block">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/slide1.jpg" alt="Сайт новостного агенства">
+
+                  <p>
+                    <a href="#" target="_blank">Обучающий проект, сайт новостного агенства</a>
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide2.jpg" alt="Мой личный сайт">
+
+                  <p>
+                    <a href="#" target="_blank">Одностраничный персональный сайт</a>
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide3.jpg" alt="Сайт отеля">
+
+                  <p>
+                    <a href="#" target="_blank">Обучающий проект, сайт сетевого отеля</a>
+                  </p>
+                </div>								
+              </div>			
+            </div>	
+            <div class="swiper-pagination-my"></div>
+
+            <div class="swiper-button-prev-my"></div>
+
+            <div class="swiper-button-next-my"></div> 
+          </div>
+
+          <button class="get-price button_size button_light" type="button">Узнать стоимость</button>
+        </div>
+      </section>
+
+      <section class="price">
+        <div class="price__container">
+          <h3 id="price__anchor">Адаптивная верстка под все устройства и&nbsp;браузеры по&nbsp;разумным ценам в&nbsp;сжатые сроки.*</h3>
+
+          <p>*Срок и&nbsp;стоимость рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</p>
+        </div>
+      </section>
+  </main>
+
+  <footer>
+    <div class="footer__container">        
+      <nav class="footer__container__section">
+        <ul>
+          <li>
+            <a href="#to-do__anchor">Услуги</a>
+          </li>
+          <li>
+            <a href="#portfolio__anchor">Портфолио</a>
+          </li>
+          <li>
+            <a href="#price__anchor">Стоимость</a>
+          </li>
+        </ul>
+      </nav> 
+        
+      <ul class="footer__container__section">
+        <li>
+          <a href="tel:+79805592680" target="_blank" class="telephon">
+            <i class="icofont-phone"></i>+7 (980) 559-26-80
+          </a>
+        </li>
+        <li>
+          <a href="mailto:dmwebdev@mail.ru" target="_blank" class="email">
+            <i class="icofont-mail"></i>dmwebdev@mail.ru
+          </a>
+        </li>
+      </ul>        
+  
+      <div class="footer__container__right">
+        <button class="get-offer button_size button_light" type="button">Задать вопрос</button>
+          
+        <ul class="social-network">
+          <li>
+            <a class="vk" href="https://vk.com/id597110410" target="_blank" >
+              <i class="icofont-vk"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook" href="https://www.facebook.com/profile.php?id=100004634804576" target="_blank">
+              <i class="icofont-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter" href="https://twitter.com/Denis90678793" target="_blank">
+              <i class="icofont-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="instagram" href="https://www.instagram.com/dmwebdev/" target="_blank">
+              <i class="icofont-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">&copy; Денис Мироненко, 2020</div>   
+  </footer>
+      <div class="form-container off">    
+        <div class="call-container off">
+          <form class="call-form">
+
+            <input type="hidden" name="project_name" value="dmwebdev">
+            <input type="hidden" name="admin_email" value="dmwebdevelop@gmail.com">
+            <input type="hidden" name="form_subject" value="Заказать звонок">
+
+            <button class="close" type="button">
+              <i class="icofont-close"></i>
+            </button>
+      
+            <h1 class="call-form__title">Заказать обратный звонок</h1>
+      
+            <p class="call-form__text">заполните форму для обратной связи</p>
+      
+            <label class="call-form__input">
+              <span>Ваше имя</span>
+      
+              <input class="required" type="text" name="name" placeholder="Ваше имя">
+            </label>
+      
+            <label class="call-form__input">
+              <span>Номер телефона</span>
+      
+              <input class="required" type="tel" name="telephone" placeholder="+7(___)___-__-__">
+            </label>
+      
+            <label class="call-form__input">
+              <span>Интересующий Вас вопрос</span>
+      
+              <textarea class="required" name="question" placeholder="Опишите интересующий Вас вопрос (не менее 50 символов)"></textarea>
+            </label>
+      
+            <input class="form__button" type="submit" value="Отправить данные" disabled>      
+            
+            <input class="checkbox call-form_check" type="checkbox" name="consent">
+      
+            <label  for="checkbox">
+                <span class="checkbox__description">*нажатием на кнопку я даю свое согласие на обработку персональных данных</span>
+            </label>      
+          </form>
+        </div>
+
+        <div class="offer-container off">
+          <form class="offer-form">
+
+            <input type="hidden" name="project_name" value="dmwebdev">
+            <input type="hidden" name="admin_email" value="dmwebdevelop@gmail.com">
+            <input type="hidden" name="form_subject" value="Задать вопрос">
+
+            <button class="close" type="button">
+              <i class="icofont-close"></i>
+            </button>
+      
+            <h1 class="offer-form__title">Задать вопрос</h1>
+      
+            <p class="offer-form__text">заполните форму для обратной связи</p>
+      
+            <label class="offer-form__input">
+              <span>Ваше имя</span>
+      
+              <input class="input__field required" type="text" name="name" placeholder="Ваше имя">
+            </label>
+      
+            <label class="offer-form__input">
+              <span>Номер телефона</span>
+      
+              <input class="input__field required" type="tel" name="telephone" placeholder="+7(___)___-__-__">
+            </label>
+      
+            <label class="offer-form__input">
+              <span>Ваша почта</span>
+      
+              <input class="input__field required" type="email" name="mail" placeholder="E-mail">
+            </label>
+      
+            <label class="offer-form__input">
+              <span>Интересующий Вас вопрос</span>
+      
+              <textarea class="input__field required" name="question" placeholder="Опишите интересующий Вас вопрос (не менее 50 символов)"></textarea>
+            </label>
+      
+            <input class="form__button" type="submit" value="Отправить данные" disabled>
+            
+            <input class="checkbox offer-form_check" type="checkbox" name="consent">
+            <label  for="checkbox">
+                <span class="checkbox__description">*нажатием на кнопку я даю свое согласие на обработку персональных данных</span>
+            </label>      
+          </form>
+        </div>
+
+        <div class="info-more-container off">
+          <div class="info-more">
+            <button class="close" type="button">
+              <i class="icofont-close"></i>
+            </button>
+      
+            <img class="info-more__img" src="img/My.png" alt="Мироненко Денис">
+      
+            <div class="info-more__text">
+              <h1 class="info-more__title">Обо мне</h1>
+      
+              <p class=""> В настоящее время являюсь студентом онлайн-университета
+                <a href="https://skillbox.ru/">Skillbox</a> онлайн-курса "Fullstack-разработчик". Знания HTML, CSS, JavaScript, JQuery. Опыт адаптивной, кроссбраузерной верстки в&nbsp;рамках обучающего курса. Следование правилам pixel perfect. Умение работать с&nbsp;макетами в&nbsp;Photoshop и&nbsp;Figma. Размещение веб-страниц на&nbsp;хостинге. Ответственность, желание работать и отвечать за&nbsp;результат. Свободно владею немецким языком, имею базовые знания английского. 
+              </p>              
+            </div>            
+          </div>
+        </div>
+
+        <div class="info-price-container off">
+          <div class="info-price">
+            <button class="close" type="button">
+              <i class="icofont-close"></i>
+            </button>
+      
+            <ul class="info-price__text"> 
+              <li>Рассмотрение проекта с&nbsp;внесением предложений&nbsp;&mdash; бесплатно.</li>
+              <li>Адаптивная кроссбраузерная верстка по&nbsp;вашему макету, от&nbsp;2&nbsp;000 руб* за&nbsp;страницу</li>
+              <li>Исправление и&nbsp;адаптация под мобильные устройства, существующего сайта&nbsp;&mdash; по&nbsp;договоренности.</li>        
+              <li>* окончательная цена и&nbsp;прочие условия обговариваются в&nbsp;зависимости от&nbsp;сложности и&nbsp;объема проекта.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <div class="mobile-menu-container off">
+      <nav class="mobile-menu-container__section">
+          <ul>
+            <li>
+              <a href="#to-do__anchor">Услуги</a>
+            </li>
+            <li>
+              <a href="#portfolio__anchor">Портфолио</a>
+            </li>
+            <li>
+              <a href="#price__anchor">Стоимость</a>
+            </li>
+          </ul>
+        </nav> 
+    </div>  
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.inputmask.min.js"></script>  
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/script_telephone.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/additional-methods.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(62700916, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/62700916" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>

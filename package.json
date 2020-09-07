@@ -1,0 +1,53 @@
+{
+  "name": "dm-webdev.ru",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development npx webpack --mode development",
+    "prod": "cross-env NODE_ENV=production npx webpack --mode production",
+    "watch": "cross-env NODE_ENV=development npx webpack --mode development --watch",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open"
+  },
+  "author": "Denis Mironenko <dmwebdevelop@gmail.ru>",
+  "license": "",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.10.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "put-count-btn": "0.0.6",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^4.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "normalize.css": "^8.0.1",
+    "swiper": "^6.2.0",
+    "webpack-php-loader": "^0.5.0"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "last 4 version",
+    "not dead",
+    "iOS >= 9"
+  ]
+}
