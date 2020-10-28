@@ -1,0 +1,47 @@
+@media all and (min-width: 1824px) {
+  .container {
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+
+  /*banner*/
+
+  .presentation {
+    background-size: 100% auto, 30% auto, 30% auto, 30% auto;
+    background-position: center 10%, -5% bottom, 110% center, 20% top;
+  }
+
+  /*todo*/
+
+  .todo {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-image: url("../../img/todo/todo_bg-xl-min.jpg");
+  }
+
+  .todo__list {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .todo__item {
+    padding: 120px .5% 25px .5%;
+  }
+
+  /*portfolio*/
+
+  .swiper-slide {
+    width: 33%;
+  }
+
+  /*feedback*/
+
+  .feedback {
+    padding: 65px 0;
+    background-image: url('../../img/feedback/feedback_bg-xl-min.jpg');
+  }
+
+
+
+
+}

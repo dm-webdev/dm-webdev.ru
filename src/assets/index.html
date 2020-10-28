@@ -3,409 +3,445 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Добро пожаловать на персональную страница начинающего веб-разработчка, Денис Мироненко. Адаптивная веб-верстка и разработка.">
+  <meta name="description" content="Добро пожаловать на персональную страницу начинающего веб-разработчка, Дениса Мироненко. Адаптивная верстка сайтов и веб-разработка.">
   <meta name="keywords" content="Мироненко, Денис, веб, web, верстка, development, разработка, layout, HTML, CSS, JS">
   <meta name="yandex-verification" content="f5f386dca2f94603" />
   <title>Denis Mironenko web-development</title>
-  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/manifest.json">  
-  <link rel="stylesheet" type="text/css" href="css/icofont.min.css">
-  <link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css"> 
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166045127-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-166045127-1');
-</script> 
+
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166045127-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-166045127-1');
+  </script>
 </head>
+<body>
+  <header class="sticky">
+    <div class="header-bar container">
+      <button class="burger" type="button" aria-label="показать меню"></button>
 
-<body> 
-    <header>      
-      <div class="top-bar">
-        <div class="top-bar__container">
-          <h1>Денис Мироненко</h1>
+      <nav class="menu">
+        <div class="menu-bar">
+          <a href="https://www.dm-webdev.ru/" class="menu-bar__logo link_style">www.dm-webdev.ru</a>
 
-          <ul class="communication__link">
-            <li>
-              <a class="viber" href="viber://chat?number=79805592680" target="_blank">
-                <i class="icofont-brand-viber"></i>
-              </a>
-            </li>
-            <li>
-              <a class="whatsapp" href="https://api.whatsapp.com/send?phone=79805592680&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83..." target="_blank">
-                <i class="icofont-brand-whatsapp"></i>
-              </a>
-            </li>
-            <li>
-              <a class="telegramm" href="https://teleg.run/dmwebdev" target="_blank">
-                <i class="icofont-paper-plane"></i>
-              </a>
-            </li>
-            <li>
-              <a class="mail" href="mailto:dmwebdev@mail.ru" target="_blank">
-                <i class="icofont-send-mail"></i>
-              </a>
-            </li>           
-          </ul>
-        </div>               
-      </div>
-    </header>
-
-    <nav class="nav-top">
-      <div class="nav-top__container">
-        <button class="nav-top__mobmenu" aria-label="open menu">
-          <span class="mobmenu__link" aria-hidden="true"></span>
-          <span class="mobmenu__link" aria-hidden="true"></span>
-          <span class="mobmenu__link" aria-hidden="true"></span>
-        </button>
-  
-        <ul class="nav-top__left">
-          <li>
-            <a class="link_white" href="#to-do__anchor">Услуги</a>
-          </li>
-          <li>
-            <a class="link_white" href="#portfolio__anchor">Портфолио</a>
-          </li>
-          <li>
-            <a class="link_white" href="#price__anchor">Стоимость</a>
-          </li>
-        </ul>
-         
-        <ul class="nav-top__right">
-          <li>
-            <a class="link_white" href="tel:+79805592680">+7-980-559-26-80</a>
-          </li>
-          <li>
-            <button class="button__nav get-call" type="button">Заказать звонок</button>
-          </li>
-        </ul>
-      </div>      
-    </nav>
-
-    <main>  
-      <section class="present">
-        <div class="present__container">
-          <div class="present__container__left">
-            <h2>Денис Мироненко</h2>
-  
-            <p>Начинающий веб-разработчик и верстальщик</p>
-    
-            <button class="get-more button_size button_light" type="button">Узнать больше</button>
-          </div>
-          
-          <img src="img/denis.png" alt="Денис Мироненко">
-        </div>       
-      </section>
-
-      <section>
-        <div class="to-do__container">
-          <h3 id="to-do__anchor">Что я делаю</h3>
-          <ul>
-            <li>
-              <i class="icofont-web to-do_icon"></i>
-  
-              <p class="to-do_text">Верска лендинг-страниц и сайтов</p>
-            </li>
-            <li>
-              <i class="icofont-responsive to-do_icon"></i>
-  
-              <p class="to-do_text">Адаптивная верска под все браузеры и устройства</p>
-            </li>
-            <li>
-              <i class="icofont-terminal to-do_icon"></i>
-  
-              <p class="to-do_text">Frontend-разработка и программирование</p>            
-            </li>
-            <li>
-              <i class="icofont-architecture-alt to-do_icon"></i>
-  
-              <p class="to-do_text">Исправление и доработка существующей верстки</p>
-            </li>
-          </ul>
-  
-          <button class="get-offer button_size button_light" type="button">Задать вопрос</button>
+          <button id="hide-menu" class="hide-btn btn_style" type="button" aria-label="скрыть меню"></button>
         </div>
-      </section>
 
-      <section>
-        <div class="portfolio__container">  
-          <h3 id="portfolio__anchor">Примеры моих работ</h3>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link link_style link_about" href="#aboutAnchor">Обо мне</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link_style link_todo" href="#todoAnchor">Услуги</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link_style link_portfolio" href="#portfolioAnchor">Портфолио</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link_style link_question" href="#feedbackAnchor">Задать вопрос</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <a href="https://www.dm-webdev.ru/" class="header-logo">
+        <img src="img/header-logo.svg" alt="Денис Мироненко" class="header-logo__img">
+      </a>     
 
-          <div class="swiper-block">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="img/slide1.jpg" alt="Сайт новостного агенства">
+      <div class="contact">
+        <a class="tel link_style" href="tel:+79805592680" target="_blank" >+7 980 559 26 80</a>
 
-                  <p>
-                    <a href="#" target="_blank">Обучающий проект, сайт новостного агенства</a>
-                  </p>
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/slide2.jpg" alt="Мой личный сайт">
+        <button class="contact__btn btn_style"></button>
 
-                  <p>
-                    <a href="#" target="_blank">Одностраничный персональный сайт</a>
-                  </p>
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/slide3.jpg" alt="Сайт отеля">
-
-                  <p>
-                    <a href="#" target="_blank">Обучающий проект, сайт сетевого отеля</a>
-                  </p>
-                </div>								
-              </div>			
-            </div>	
-            <div class="swiper-pagination-my"></div>
-
-            <div class="swiper-button-prev-my"></div>
-
-            <div class="swiper-button-next-my"></div> 
+        <div class="contact__menu">
+          <div class="menu-bar contact__bar">
+            <a href="https://www.dm-webdev.ru/" class="menu-bar__logo link_style">www.dm-webdev.ru</a>
+  
+            <button id="hide-contact" class="hide-btn btn_style" type="button" aria-label="скрыть меню"></button>
           </div>
 
-          <button class="get-price button_size button_light" type="button">Узнать стоимость</button>
-        </div>
-      </section>
-
-      <section class="price">
-        <div class="price__container">
-          <h3 id="price__anchor">Адаптивная верстка под все устройства и&nbsp;браузеры по&nbsp;разумным ценам в&nbsp;сжатые сроки.*</h3>
-
-          <p>*Срок и&nbsp;стоимость рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</p>
-        </div>
-      </section>
-  </main>
-
-  <footer>
-    <div class="footer__container">        
-      <nav class="footer__container__section">
-        <ul>
-          <li>
-            <a href="#to-do__anchor">Услуги</a>
-          </li>
-          <li>
-            <a href="#portfolio__anchor">Портфолио</a>
-          </li>
-          <li>
-            <a href="#price__anchor">Стоимость</a>
-          </li>
-        </ul>
-      </nav> 
-        
-      <ul class="footer__container__section">
-        <li>
-          <a href="tel:+79805592680" target="_blank" class="telephon">
-            <i class="icofont-phone"></i>+7 (980) 559-26-80
-          </a>
-        </li>
-        <li>
-          <a href="mailto:dmwebdev@mail.ru" target="_blank" class="email">
-            <i class="icofont-mail"></i>dmwebdev@mail.ru
-          </a>
-        </li>
-      </ul>        
-  
-      <div class="footer__container__right">
-        <button class="get-offer button_size button_light" type="button">Задать вопрос</button>
-          
-        <ul class="social-network">
-          <li>
-            <a class="vk" href="https://vk.com/id597110410" target="_blank" >
-              <i class="icofont-vk"></i>
-            </a>
-          </li>
-          <li>
-            <a class="facebook" href="https://www.facebook.com/profile.php?id=100004634804576" target="_blank">
-              <i class="icofont-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a class="twitter" href="https://twitter.com/Denis90678793" target="_blank">
-              <i class="icofont-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a class="instagram" href="https://www.instagram.com/dmwebdev/" target="_blank">
-              <i class="icofont-instagram"></i>
-            </a>
-          </li>
-        </ul>
+          <ul class="contact__list">
+            <li class="contact__item">
+              <a class="contact__link telegram link_style" href="https://teleg.run/dmwebdev" target="_blank" aria-label="напиши в Telegram">
+                <span class="contact__desk">Telegram</span>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link whatsapp link_style" href="https://api.whatsapp.com/send?phone=79805592680&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83..." target="_blank" aria-label="напиши в Whatsapp">
+                <span class="contact__desk">Whatsapp</span>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link viber link_style" href="viber://chat?number=79805592680" target="_blank" aria-label="напиши в Viber">
+                <span class="contact__desk">Viber</span>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link mail link_style" href="mailto:dmwebdev@mail.ru" target="_blank" aria-label="напиши на почту">
+                <span class="contact__desk">Email</span>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link github link_style" href="https://github.com/dm-webdev" target="_blank" aria-label="я на Github">
+                <span class="contact__desk">Github</span>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link link_question link_style" href="#feedbackAnchor" aria-label="задать вопрос">
+                <span class="contact__desk">Задать вопрос</span>
+              </a>
+            </li>            
+          </ul>
+        </div>        
       </div>
     </div>
+  </header>
 
-    <div class="copyright">&copy; Денис Мироненко, 2020</div>   
-  </footer>
-      <div class="form-container off">    
-        <div class="call-container off">
-          <form class="call-form">
+  <main>
+    <section class="presentation">
+      <h1 class="visually-hidden">Персональная страница Дениса Мироненко - начинающего веб-разработчкика</h1>
 
-            <input type="hidden" name="project_name" value="dmwebdev">
-            <input type="hidden" name="admin_email" value="dmwebdevelop@gmail.com">
-            <input type="hidden" name="form_subject" value="Заказать звонок">
+      <section class="banner container">
+        <div class=" banner__container">
+          <picture>
+            <source media="(min-width: 1224px)" type="image/webp" srcset="img/banner/banner-m@x2-w.webp 1x, img/banner/banner-m@x3-w.webp 2x">
 
-            <button class="close" type="button">
-              <i class="icofont-close"></i>
-            </button>
-      
-            <h1 class="call-form__title">Заказать обратный звонок</h1>
-      
-            <p class="call-form__text">заполните форму для обратной связи</p>
-      
-            <label class="call-form__input">
-              <span>Ваше имя</span>
-      
-              <input class="required" type="text" name="name" placeholder="Ваше имя">
-            </label>
-      
-            <label class="call-form__input">
-              <span>Номер телефона</span>
-      
-              <input class="required" type="tel" name="telephone" placeholder="+7(___)___-__-__">
-            </label>
-      
-            <label class="call-form__input">
-              <span>Интересующий Вас вопрос</span>
-      
-              <textarea class="required" name="question" placeholder="Опишите интересующий Вас вопрос (не менее 50 символов)"></textarea>
-            </label>
-      
-            <input class="form__button" type="submit" value="Отправить данные" disabled>      
-            
-            <input class="checkbox call-form_check" type="checkbox" name="consent">
-      
-            <label  for="checkbox">
-                <span class="checkbox__description">*нажатием на кнопку я даю свое согласие на обработку персональных данных</span>
-            </label>      
-          </form>
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/banner/banner-xs@x2-m@x1-w.webp 1x, img/banner/banner-m@x2-w.webp 2x, img/banner/banner-m@x3-w.webp 3x">
+
+            <source media="(min-width: 576px)" type="image/webp" srcset="img/banner/banner-s@x1-w.webp 1x, img/banner/banner-xs@x3-s@x2-w.webp 2x, img/banner/banner-s@x3-w.webp 3x">
+  
+            <source type="image/webp" srcset="img/banner/banner-xs@x1-w.webp 1x, img/banner/banner-xs@x2-m@x1-w.webp 2x, img/banner/banner-xs@x3-s@x2-w.webp 3x">
+
+            <source media="(min-width: 1224px)" srcset="img/banner/banner-m@x2-min.png 1x, img/banner/banner-m@x3-min.png 2x">
+  
+            <source media="(min-width: 768px)" srcset="img/banner/banner-xs@x2-m@x1-min.png 1x, img/banner/banner-m@x2-min.png 2x, img/banner/banner-m@x3-min.png 3x">
+
+            <source media="(min-width: 576px)" srcset="img/banner/banner-s@x1-min.png 1x, img/banner/banner-xs@x3-s@x2-min.png 2x, img/banner/banner-s@x3-min.png 3x">
+  
+            <img src="img/banner/banner-xs@x1-min.png" srcset="img/banner/banner-xs@x2-m@x1-min.png 2x, img/banner/banner-xs@x3-s@x2-min.png 3x" alt="Денис Мироненко - веб-разработчик" />
+          </picture >
         </div>
+  
+        <div class="banner__wrap container">
+          <h2 class="banner__header">Денис Мироненко</h2>
+  
+          <p class="banner__desk">Начинающий веб&nbsp;-&nbsp;разработчик и&nbsp;верстальщик сайтов</p>
+  
+          <a class="banner__btn btn" href="#feedbackAnchor">заказать звонок</a> 
+        </div>        
+      </section>
+  
+      <section class="about container">
+        <h2 id="aboutAnchor" class="section_heading about__heading">Обо мне</h2>
 
-        <div class="offer-container off">
-          <form class="offer-form">
+        <ul class="about__list">
+          <li class="about__item">
+            <p class="about__desk">В настоящее время являюсь студентом онлайн-университета Skillbox,  курса «Fullstack-разработчик».</p>
 
-            <input type="hidden" name="project_name" value="dmwebdev">
-            <input type="hidden" name="admin_email" value="dmwebdevelop@gmail.com">
-            <input type="hidden" name="form_subject" value="Задать вопрос">
+            <p class="about__desk">Знания HTML, CSS, JavaScript, JQuery, React.</p>
 
-            <button class="close" type="button">
-              <i class="icofont-close"></i>
-            </button>
+            <p class="about__desk">Опыт семантичной адаптивной кроссбраузерной верстки в рамках обучающего курса.</p>
+
+            <p class="about__desk">Следование правилам pixel perfect.</p>
+          </li>
+          <li class="about__item">
+            <p class="about__desk">Умение работать с макетами в Photoshop и Figma. Использование сборщиков и GIT в проектах.</p>
+
+            <p class="about__desk">Размещение веб-страниц на хостинге.</p>
+
+            <p class="about__desk">Ответственность, желание работать и отвечать за результат. Быстрая обучаемость.</p>
+
+            <p class="about__desk">Свободное владение немецким языком, базовые знания английского языка.</p>
+          </li>
+        </ul>
+
+        <ul class="social about__social">
+          <li class="social__item">
+            <a class="social__link btn_style facebook" href="https://www.facebook.com/profile.php?id=100004634804576" target="_blank" aria-label="я в facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link btn_style vk" href="https://vk.com/id597110410" target="_blank" aria-label="я в контакте"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link btn_style twitter" href="https://twitter.com/Denis90678793" target="_blank" aria-label="я в twitter"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link btn_style instagram" href="https://www.instagram.com/dmwebdev/" target="_blank" aria-label="я в instagram"></a>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="todo">
+      <div class="container todo__container">
+        <h2 id="todoAnchor" class="section_heading todo__heading">мои услуги</h2>
+
+        <ul class="todo__list">
+          <li class="todo__item layout">верстка лендингстраниц и сайтов</li>
+          <li class="todo__item adaptiv">адаптивная верска под все браузеры и устройства</li>
+          <li class="todo__item frontend">Frontend разработка и программирование</li>
+          <li class="todo__item fixed">исправление и доработка существующей верстки</li>
+        </ul>
+
+        <a class="btn todo__btn" href="#feedbackAnchor">задать вопрос</a>
+      </div>
+    </section>
+
+    <section class="portfolio container">
+      <h2 id="portfolioAnchor" class="section_heading portfolio__heading">портфолио</h2>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source media="(min-width: 1884px)" type="image/webp" srcset="img/portfolio/camping/camping-xl@-x1.webp 1x, img/portfolio/camping/camping-xl@-x2.webp 2x, img/portfolio/camping/camping-xl@-x3.webp 3x">
+
+                <source media="(min-width: 1224px)" type="image/webp" srcset="img/portfolio/camping/camping-l@-x1.webp 1x, img/portfolio/camping/camping-l@-x2.webp 2x, img/portfolio/camping/camping-l@-x3.webp 3x">
+    
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/portfolio/camping/camping-m@-x1.webp 1x, img/portfolio/camping/camping-m@-x2.webp 2x, img/portfolio/camping/camping-m@-x3.webp 3x">
+    
+                <source media="(min-width: 576px)" type="image/webp" srcset="img/portfolio/camping/camping-s@-x1.webp 1x, img/portfolio/camping/camping-s@-x2.webp 2x, img/portfolio/camping/camping-s@-x3.webp 3x">
       
-            <h1 class="offer-form__title">Задать вопрос</h1>
+                <source type="image/webp" srcset="img/portfolio/camping/camping-xs@-x1.webp 1x, img/portfolio/camping/camping-xs@-x2.webp 2x, img/portfolio/camping/camping-xs@-x3.webp 3x">
+
+                <source media="(min-width: 1824px)" srcset="img/portfolio/camping/camping-xl@-x1-min.jpg 1x, img/portfolio/camping/camping-xl@-x2-min.jpg 2x, img/portfolio/camping/camping-xl@-x3-min.jpg 3x">
+    
+                <source media="(min-width: 1224px)" srcset="img/portfolio/camping/camping-l@-x1-min.jpg 1x, img/portfolio/camping/camping-l@-x2-min.jpg 2x, img/portfolio/camping/camping-l@-x3-min.jpg 3x">
       
-            <p class="offer-form__text">заполните форму для обратной связи</p>
+                <source media="(min-width: 768px)" srcset="img/portfolio/camping/camping-m@-x1-min.jpg 1x, img/portfolio/camping/camping-m@-x2-min.jpg 2x, img/portfolio/camping/camping-m@-x3-min.jpg 3x">
+    
+                <source media="(min-width: 576px)" srcset="img/portfolio/camping/camping-s@-x1-min.jpg 1x, img/portfolio/camping/camping-s@-x2-min.jpg 2x, img/portfolio/camping/camping-s@-x3-min.jpg 3x">
       
-            <label class="offer-form__input">
-              <span>Ваше имя</span>
+                <img class="portfolio__img" src="img/portfolio/camping/camping-xs@-x1-min.jpg" srcset="img/portfolio/camping/camping-xs@-x2-min.jpg 2x, img/portfolio/camping/camping-xs@-x3-min.jpg 3x" alt="верстка лендинг страницы camping" />
+              </picture >
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source media="(min-width: 1884px)" type="image/webp" srcset="img/portfolio/evklid/evklid-xl@-1x.webp 1x, img/portfolio/evklid/evklid-xl@-2x.webp 2x, img/portfolio/evklid/evklid-xl@-3x.webp 3x">
+
+                <source media="(min-width: 1224px)" type="image/webp" srcset="img/portfolio/evklid/evklid-l@-1x.webp 1x, img/portfolio/evklid/evklid-l@-2x.webp 2x, img/portfolio/evklid/evklid-l@-3x.webp 3x">
+    
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/portfolio/evklid/evklid-m@-1x.webp 1x, img/portfolio/evklid/evklid-m@-2x.webp 2x, img/portfolio/evklid/evklid-m@-3x.webp 3x">
+    
+                <source media="(min-width: 576px)" type="image/webp" srcset="img/portfolio/evklid/evklid-s@-1x.webp 1x, img/portfolio/evklid/evklid-s@-2x.webp 2x, img/portfolio/evklid/evklid-s@-3x.webp 3x">
       
-              <input class="input__field required" type="text" name="name" placeholder="Ваше имя">
-            </label>
+                <source type="image/webp" srcset="img/portfolio/evklid/evklid-xs@-1x.webp 1x, img/portfolio/evklid/evklid-xs@-2x.webp 2x, img/portfolio/evklid/evklid-xs@-3x.webp 3x">
+
+                <source media="(min-width: 1824px)" srcset="img/portfolio/evklid/evklid-xl@-1x-min.jpg 1x, img/portfolio/evklid/evklid-xl@-2x-min.jpg 2x, img/portfolio/evklid/evklid-xl@-3x-min.jpg 3x">
+    
+                <source media="(min-width: 1224px)" srcset="img/portfolio/evklid/evklid-l@-1x-min.jpg 1x, img/portfolio/evklid/evklid-l@-2x-min.jpg 2x, img/portfolio/evklid/evklid-l@-3x-min.jpg 3x">
       
-            <label class="offer-form__input">
-              <span>Номер телефона</span>
+                <source media="(min-width: 768px)" srcset="img/portfolio/evklid/evklid-m@-1x-min.jpg 1x, img/portfolio/evklid/evklid-m@-2x-min.jpg 2x, img/portfolio/evklid/evklid-m@-3x-min.jpg 3x">
+    
+                <source media="(min-width: 576px)" srcset="img/portfolio/evklid/evklid-s@-1x-min.jpg 1x, img/portfolio/evklid/evklid-s@-2x-min.jpg 2x, img/portfolio/evklid/evklid-s@-3x-min.jpg 3x">
       
-              <input class="input__field required" type="tel" name="telephone" placeholder="+7(___)___-__-__">
-            </label>
+                <img class="portfolio__img" src="img/portfolio/evklid/evklid-xs@-1x-min.jpg" srcset="img/portfolio/evklid/evklid-xs@-2x-min.jpg 2x, img/portfolio/evklid/evklid-xs@-3x-min.jpg 3x" alt="верстка лендинг страницы компании Евклид" />
+              </picture >
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source media="(min-width: 1884px)" type="image/webp" srcset="img/portfolio/lagoon/lagoon-xl@-1x.webp 1x, img/portfolio/lagoon/lagoon-xl@-2x.webp 2x, img/portfolio/lagoon/lagoon-xl@-3x.webp 3x">
+
+                <source media="(min-width: 1224px)" type="image/webp" srcset="img/portfolio/lagoon/lagoon-l@-1x.webp 1x, img/portfolio/lagoon/lagoon-l@-2x.webp 2x, img/portfolio/lagoon/lagoon-l@-3x.webp 3x">
+    
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/portfolio/lagoon/lagoon-m@-1x.webp 1x, img/portfolio/lagoon/lagoon-m@-2x.webp 2x, img/portfolio/lagoon/lagoon-m@-3x.webp 3x">
+    
+                <source media="(min-width: 576px)" type="image/webp" srcset="img/portfolio/lagoon/lagoon-s@-1x.webp 1x, img/portfolio/lagoon/lagoon-s@-2x.webp 2x, img/portfolio/lagoon/lagoon-s@-3x.webp 3x">
       
-            <label class="offer-form__input">
-              <span>Ваша почта</span>
+                <source type="image/webp" srcset="img/portfolio/lagoon/lagoon-xs@-1x.webp 1x, img/portfolio/lagoon/lagoon-xs@-2x.webp 2x, img/portfolio/lagoon/lagoon-xs@-3x.webp 3x">
+
+                <source media="(min-width: 1824px)" srcset="img/portfolio/lagoon/lagoon-xl@-1x-min.jpg 1x, img/portfolio/lagoon/lagoon-xl@-2x-min.jpg 2x, img/portfolio/lagoon/lagoon-xl@-3x-min.jpg 3x">
+    
+                <source media="(min-width: 1224px)" srcset="img/portfolio/lagoon/lagoon-l@-1x-min.jpg 1x, img/portfolio/lagoon/lagoon-l@-2x-min.jpg 2x, img/portfolio/lagoon/lagoon-l@-3x-min.jpg 3x">
       
-              <input class="input__field required" type="email" name="mail" placeholder="E-mail">
-            </label>
+                <source media="(min-width: 768px)" srcset="img/portfolio/lagoon/lagoon-m@-1x-min.jpg 1x, img/portfolio/lagoon/lagoon-m@-2x-min.jpg 2x, img/portfolio/lagoon/lagoon-m@-3x-min.jpg 3x">
+    
+                <source media="(min-width: 576px)" srcset="img/portfolio/lagoon/lagoon-s@-1x-min.jpg 1x, img/portfolio/lagoon/lagoon-s@-2x-min.jpg 2x, img/portfolio/lagoon/lagoon-s@-3x-min.jpg 3x">
       
-            <label class="offer-form__input">
-              <span>Интересующий Вас вопрос</span>
+                <img class="portfolio__img" src="img/portfolio/lagoon/lagoon-xs@-1x-min.jpg" srcset="img/portfolio/lagoon/lagoon-xs@-2x-min.jpg 2x, img/portfolio/lagoon/lagoon-xs@-3x-min.jpg 3x" alt="верстка сайта сети отелей Lagoon" />
+              </picture >
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source media="(min-width: 1884px)" type="image/webp" srcset="img/portfolio/linkedin/linkedin-xl@-1x.webp 1x, img/portfolio/linkedin/linkedin-xl@-2x.webp 2x, img/portfolio/linkedin/linkedin-xl@-3x.webp 3x">
+
+                <source media="(min-width: 1224px)" type="image/webp" srcset="img/portfolio/linkedin/linkedin-l@-1x.webp 1x, img/portfolio/linkedin/linkedin-l@-2x.webp 2x, img/portfolio/linkedin/linkedin-l@-3x.webp 3x">
+    
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/portfolio/linkedin/linkedin-m@-1x.webp 1x, img/portfolio/linkedin/linkedin-m@-2x.webp 2x, img/portfolio/linkedin/linkedin-m@-3x.webp 3x">
+    
+                <source media="(min-width: 576px)" type="image/webp" srcset="img/portfolio/linkedin/linkedin-s@-1x.webp 1x, img/portfolio/linkedin/linkedin-s@-2x.webp 2x, img/portfolio/linkedin/linkedin-s@-3x.webp 3x">
       
-              <textarea class="input__field required" name="question" placeholder="Опишите интересующий Вас вопрос (не менее 50 символов)"></textarea>
-            </label>
+                <source type="image/webp" srcset="img/portfolio/linkedin/linkedin-xs@-1x.webp 1x, img/portfolio/linkedin/linkedin-xs@-2x.webp 2x, img/portfolio/linkedin/linkedin-xs@-3x.webp 3x">
+
+                <source media="(min-width: 1824px)" srcset="img/portfolio/linkedin/linkedin-xl@-1x-min.jpg 1x, img/portfolio/linkedin/linkedin-xl@-2x-min.jpg 2x, img/portfolio/linkedin/linkedin-xl@-3x-min.jpg 3x">
+    
+                <source media="(min-width: 1224px)" srcset="img/portfolio/linkedin/linkedin-l@-1x-min.jpg 1x, img/portfolio/linkedin/linkedin-l@-2x-min.jpg 2x, img/portfolio/linkedin/linkedin-l@-3x-min.jpg 3x">
       
-            <input class="form__button" type="submit" value="Отправить данные" disabled>
-            
-            <input class="checkbox offer-form_check" type="checkbox" name="consent">
-            <label  for="checkbox">
-                <span class="checkbox__description">*нажатием на кнопку я даю свое согласие на обработку персональных данных</span>
-            </label>      
-          </form>
+                <source media="(min-width: 768px)" srcset="img/portfolio/linkedin/linkedin-m@-1x-min.jpg 1x, img/portfolio/linkedin/linkedin-m@-2x-min.jpg 2x, img/portfolio/linkedin/linkedin-m@-3x-min.jpg 3x">
+    
+                <source media="(min-width: 576px)" srcset="img/portfolio/linkedin/linkedin-s@-1x-min.jpg 1x, img/portfolio/linkedin/linkedin-s@-2x-min.jpg 2x, img/portfolio/linkedin/linkedin-s@-3x-min.jpg 3x">
+      
+                <img class="portfolio__img" src="img/portfolio/linkedin/linkedin-xs@-1x-min.jpg" srcset="img/portfolio/linkedin/linkedin-xs@-2x-min.jpg 2x, img/portfolio/linkedin/linkedin-xs@-3x-min.jpg 3x" alt="верстка личного кабинета linkedin" />
+              </picture >
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source media="(min-width: 1884px)" type="image/webp" srcset="img/portfolio/moonriver/moonriver-xl@-x1.webp 1x, img/portfolio/moonriver/moonriver-xl@-x2.webp 2x, img/portfolio/moonriver/moonriver-xl@-x3.webp 3x">
+
+                <source media="(min-width: 1224px)" type="image/webp" srcset="img/portfolio/moonriver/moonriver-l@-x1.webp 1x, img/portfolio/moonriver/moonriver-l@-x2.webp 2x, img/portfolio/moonriver/moonriver-l@-x3.webp 3x">
+    
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/portfolio/moonriver/moonriver-m@-x1.webp 1x, img/portfolio/moonriver/moonriver-m@-x2.webp 2x, img/portfolio/moonriver/moonriver-m@-x3.webp 3x">
+    
+                <source media="(min-width: 576px)" type="image/webp" srcset="img/portfolio/moonriver/moonriver-s@-x1.webp 1x, img/portfolio/moonriver/moonriver-s@-x2.webp 2x, img/portfolio/moonriver/moonriver-s@-x3.webp 3x">
+      
+                <source type="image/webp" srcset="img/portfolio/moonriver/moonriver-xs@-x1.webp 1x, img/portfolio/moonriver/moonriver-xs@-x2.webp 2x, img/portfolio/moonriver/moonriver-xs@-x3.webp 3x">
+
+                <source media="(min-width: 1824px)" srcset="img/portfolio/moonriver/moonriver-xl@-x1-min.jpg 1x, img/portfolio/moonriver/moonriver-xl@-x2-min.jpg 2x, img/portfolio/moonriver/moonriver-xl@-x3-min.jpg 3x">
+    
+                <source media="(min-width: 1224px)" srcset="img/portfolio/moonriver/moonriver-l@-x1-min.jpg 1x, img/portfolio/moonriver/moonriver-l@-x2-min.jpg 2x, img/portfolio/moonriver/moonriver-l@-x3-min.jpg 3x">
+      
+                <source media="(min-width: 768px)" srcset="img/portfolio/moonriver/moonriver-m@-x1-min.jpg 1x, img/portfolio/moonriver/moonriver-m@-x2-min.jpg 2x, img/portfolio/moonriver/moonriver-m@-x3-min.jpg 3x">
+    
+                <source media="(min-width: 576px)" srcset="img/portfolio/moonriver/moonriver-s@-x1-min.jpg 1x, img/portfolio/moonriver/moonriver-s@-x2-min.jpg 2x, img/portfolio/moonriver/moonriver-s@-x3-min.jpg 3x">
+      
+                <img class="portfolio__img" src="img/portfolio/moonriver/moonriver-xs@-x1-min.jpg" srcset="img/portfolio/moonriver/moonriver-xs@-x2-min.jpg 2x, img/portfolio/moonriver/moonriver-xs@-x3-min.jpg 3x" alt="верстка продающего сайта MoonRiver" />
+              </picture >
+            </div>
+
+            <div class="swiper-slide">
+              <picture>
+                <source media="(min-width: 1884px)" type="image/webp" srcset="img/portfolio/news/news-xl@-x1.webp 1x, img/portfolio/news/news-xl@-x2.webp 2x, img/portfolio/news/news-xl@-x3.webp 3x">
+
+                <source media="(min-width: 1224px)" type="image/webp" srcset="img/portfolio/news/news-l@-x1.webp 1x, img/portfolio/news/news-l@-x2.webp 2x, img/portfolio/news/news-l@-x3.webp 3x">
+    
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/portfolio/news/news-m@-x1.webp 1x, img/portfolio/news/news-m@-x2.webp 2x, img/portfolio/news/news-m@-x3.webp 3x">
+    
+                <source media="(min-width: 576px)" type="image/webp" srcset="img/portfolio/news/news-s@-x1.webp 1x, img/portfolio/news/news-s@-x2.webp 2x, img/portfolio/news/news-s@-x3.webp 3x">
+      
+                <source type="image/webp" srcset="img/portfolio/news/news-xs@-x1.webp 1x, img/portfolio/news/news-xs@-x2.webp 2x, img/portfolio/news/news-xs@-x3.webp 3x">
+
+                <source media="(min-width: 1824px)" srcset="img/portfolio/news/news-xl@-x1-min.jpg 1x, img/portfolio/news/news-xl@-x2-min.jpg 2x, img/portfolio/news/news-xl@-x3-min.jpg 3x">
+    
+                <source media="(min-width: 1224px)" srcset="img/portfolio/news/news-l@-x1-min.jpg 1x, img/portfolio/news/news-l@-x2-min.jpg 2x, img/portfolio/news/news-l@-x3-min.jpg 3x">
+      
+                <source media="(min-width: 768px)" srcset="img/portfolio/news/news-m@-x1-min.jpg 1x, img/portfolio/news/news-m@-x2-min.jpg 2x, img/portfolio/news/news-m@-x3-min.jpg 3x">
+    
+                <source media="(min-width: 576px)" srcset="img/portfolio/news/news-s@-x1-min.jpg 1x, img/portfolio/news/news-s@-x2-min.jpg 2x, img/portfolio/news/news-s@-x3-min.jpg 3x">
+      
+                <img class="portfolio__img" src="img/portfolio/news/news-xs@-x1-min.jpg" srcset="img/portfolio/news/news-xs@-x2-min.jpg 2x, img/portfolio/news/news-xs@-x3-min.jpg 3x" alt="верстка страницы новостного сайта" />
+              </picture >
+            </div>
         </div>
+    </div>
 
-        <div class="info-more-container off">
-          <div class="info-more">
-            <button class="close" type="button">
-              <i class="icofont-close"></i>
-            </button>
+    <a class="portfolio__link btn" href="https://github.com/dm-webdev" target="_blank">Больше работ на GitHub</a>
+  </section>
+</main>
+
+<footer>
+  <section class="feedback">
+    <div class="container feedback__container">
+      <h2 id="feedbackAnchor" class="section_heading feedback__heading">обратная связь</h2>
+
+      <div class="feedback__wrap">
+        <form class="feedback-form" name="contactUs">
+          <input type="hidden" name="project_name" value="dmwebdev">
+          <input type="hidden" name="admin_email" value="dmwebdevelop@gmail.com">
+          <input type="hidden" name="form_subject" value="Форма обратной связи">
       
-            <img class="info-more__img" src="img/My.png" alt="Мироненко Денис">
+          <label class="feedback-form__wrap">
+            <span class="feedback-form__desc">Как вас зовут*</span>
       
-            <div class="info-more__text">
-              <h1 class="info-more__title">Обо мне</h1>
+            <input class="feedback-form__item item_name" type="text" name="name" data-validate-field="name" placeholder=" " required>
+          </label>
+
+          <label class="feedback-form__wrap">
+            <span class="feedback-form__desc">Укажите ваш телефон*</span>
       
-              <p class=""> В настоящее время являюсь студентом онлайн-университета
-                <a href="https://skillbox.ru/">Skillbox</a> онлайн-курса "Fullstack-разработчик". Знания HTML, CSS, JavaScript, JQuery. Опыт адаптивной, кроссбраузерной верстки в&nbsp;рамках обучающего курса. Следование правилам pixel perfect. Умение работать с&nbsp;макетами в&nbsp;Photoshop и&nbsp;Figma. Размещение веб-страниц на&nbsp;хостинге. Ответственность, желание работать и отвечать за&nbsp;результат. Свободно владею немецким языком, имею базовые знания английского. 
-              </p>              
-            </div>            
+            <input class="feedback-form__item item_tel" type="tel" name="phoneNumber" data-validate-field="phoneNumber" placeholder=" " required>
+          </label>
+      
+          <label class="feedback-form__wrap">
+            <span class="feedback-form__desc">Укажите ваш e-mail*</span>
+      
+            <input class="feedback-form__item item_email" type="email" name="email" data-validate-field="email" placeholder=" " required>
+          </label>
+
+          <label class="feedback-form__wrap">
+            <span class="feedback-form__desc">Интересующий Вас вопрос</span>
+    
+            <textarea class="feedback-form__item item_message" name="text" rows="9" data-validate-field="text" placeholder=" "></textarea>
+          </label>
+
+          <div class="feedback-form__bar">
+            <button class="feedback-form__btn btn" type="submit" disabled>отправить</button>
+
+            <label class="consent">
+              <input class="consent_hide consent__btn" type="checkbox" name="consent" data-validate-field="checkbox">
+
+              <span class="consent__custom-checkbox"></span>
+              <span class="consent__custom-checkbox_desc">*нажатием на кнопку я даю свое согласие на обработку персональных данных</span>
+            </label>
           </div>
-        </div>
+        </form>
 
-        <div class="info-price-container off">
-          <div class="info-price">
-            <button class="close" type="button">
-              <i class="icofont-close"></i>
-            </button>
-      
-            <ul class="info-price__text"> 
-              <li>Рассмотрение проекта с&nbsp;внесением предложений&nbsp;&mdash; бесплатно.</li>
-              <li>Адаптивная кроссбраузерная верстка по&nbsp;вашему макету, от&nbsp;2&nbsp;000 руб* за&nbsp;страницу</li>
-              <li>Исправление и&nbsp;адаптация под мобильные устройства, существующего сайта&nbsp;&mdash; по&nbsp;договоренности.</li>        
-              <li>* окончательная цена и&nbsp;прочие условия обговариваются в&nbsp;зависимости от&nbsp;сложности и&nbsp;объема проекта.</li>
-            </ul>
-          </div>
+        <div class="feedback__intro">
+
+          <a href="https://www.dm-webdev.ru/" class="feedback__logo">
+            <img src="img/header-logo.svg" alt="Денис Мироненко" class="feedback__img">
+          </a> 
+
+          <p class="feedback__desk">Адаптивная верска под все устройства и браузеры по индивидуальным макетам и шаблонам. Исправление и адаптация под мобильные устройства. Frontend разработка. Звоните или используйте любой предложенных видов связи. Рассмотрю любые предложения.</p>
         </div>
       </div>
+      <a class="feedback__tel link_style" href="tel:+79805592680" target="_blank" >+7 980 559 26 80</a>
 
-    <div class="mobile-menu-container off">
-      <nav class="mobile-menu-container__section">
-          <ul>
-            <li>
-              <a href="#to-do__anchor">Услуги</a>
-            </li>
-            <li>
-              <a href="#portfolio__anchor">Портфолио</a>
-            </li>
-            <li>
-              <a href="#price__anchor">Стоимость</a>
-            </li>
-          </ul>
-        </nav> 
-    </div>  
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/jquery.inputmask.min.js"></script>  
-  <script src="js/jquery.formstyler.min.js"></script>
-  <script src="js/script_telephone.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/additional-methods.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/script.js"></script>
-  <!-- Yandex.Metrika counter -->
+      <div class="feedback__bar">
+        <ul class="feedback__nav-list">
+          <li class="feedback__nav-item">
+            <a class="feedback__nav-link link_style" href="#aboutAnchor">Обо мне</a>
+          </li>
+          <li class="feedback__nav-item">
+            <a class="feedback__nav-link link_style" href="#todoAnchor">Услуги</a>
+          </li>
+          <li class="feedback__nav-item">
+            <a class="feedback__nav-link link_style" href="#portfolioAnchor">Портфолио</a>
+          </li>
+        </ul>
+  
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <a class="feedback__link telegram link_style" href="https://teleg.run/dmwebdev" target="_blank" aria-label="напиши в Telegram"></a>
+          </li>
+          <li class="feedback__item">
+            <a class="feedback__link whatsapp link_style" href="https://api.whatsapp.com/send?phone=79805592680&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D1%8F%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83..." target="_blank" aria-label="напиши в Whatsapp"></a>
+          </li>
+          <li class="feedback__item">
+            <a class="feedback__link viber link_style" href="viber://chat?number=79805592680" target="_blank" aria-label="напиши в Viber"></a>
+          </li>
+          <li class="feedback__item">
+            <a class="feedback__link mail link_style" href="mailto:dmwebdev@mail.ru" target="_blank" aria-label="напиши на почту"></a>
+          </li>
+          <li class="feedback__item">
+            <a class="feedback__link github link_style" target="_blank" href="https://github.com/dm-webdev" aria-label="я на Github"></a>
+          </li>     
+        </ul>
+      </div>     
+    </div>    
+  </section>
+
+  <div class="copi">&copy;  Денис Мироненко, 2020</div>
+</footer>
 <script type="text/javascript" >
   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})

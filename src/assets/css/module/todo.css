@@ -1,0 +1,61 @@
+.todo {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: var(--background);
+  background-color: var(--darkblue);
+  background-image: url("../../img/todo/todo_bg-xs-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.todo__container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.todo__heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.todo__list {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  letter-spacing: 0.053em;
+  text-transform: uppercase;
+}
+
+.todo__item {
+  padding: 85px 10% 25px 10%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 80px 80px;
+}
+
+.layout {
+  background-image: url("../../img/todo/layout.svg");
+}
+
+.adaptiv {
+  background-image: url("../../img/todo/adaptiv.svg");
+}
+
+.frontend {
+  background-image: url("../../img/todo/frontend.svg");
+}
+
+.fixed {
+  background-image: url("../../img/todo/fixed.svg");
+}
+
+.todo__btn {
+  align-self: start;
+}
+
+
+

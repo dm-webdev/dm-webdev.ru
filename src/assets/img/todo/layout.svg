@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Website, computer, browser, internet, internet of things, </title>
+  <g id="Outline">
+    <path d="M59,5H5A3,3,0,0,0,2,8v5H4V8A1,1,0,0,1,5,7H59a1,1,0,0,1,1,1V28.1h2V8A3,3,0,0,0,59,5Z" fill="#019EE3" />
+    <path
+      d="M60,37H58V28a1,1,0,0,0-1-1H29a1,1,0,0,0-1,1v9H4V15.032H2V42a3,3,0,0,0,3,3H26v4H20a1,1,0,0,0-.707.293l-4,4,0,0a1.013,1.013,0,0,0-.191.284.948.948,0,0,0-.033.094.992.992,0,0,0-.054.264c0,.022-.012.04-.012.062v4a1,1,0,0,0,1,1H48a1,1,0,0,0,1-1V54c0-.022-.011-.04-.012-.062a.992.992,0,0,0-.054-.264.948.948,0,0,0-.033-.094,1.013,1.013,0,0,0-.191-.284l0,0-4-4A1,1,0,0,0,44,49H38V45H59a3,3,0,0,0,3-3V30H60ZM30,29H56v8H48.469l-4.7-5.641a1.035,1.035,0,0,0-1.536,0L37.531,37H30Zm15.865,8h-5.73L43,33.563ZM20.414,51H26v2H18.414ZM47,57H17V55H47Zm-3.414-6,2,2H38V51ZM36,53H28V45h8ZM60,42a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V39H60Z" fill="#019EE3"/>
+    <rect x="6" y="8" width="2" height="2" fill="#019EE3"/>
+    <rect x="10" y="8" width="2" height="2" fill="#019EE3"/>
+    <rect x="14" y="8" width="2" height="2" fill="#019EE3"/>
+    <rect x="6" y="11" width="52" height="2" fill="#019EE3"/>
+    <path
+      d="M6,30a1,1,0,0,0,1,1H25a1,1,0,0,0,1-1V16a1,1,0,0,0-1-1H7a1,1,0,0,0-1,1Zm3.245-1L16,21.5,22.755,29ZM24,17V27.394l-7.257-8.063a1.03,1.03,0,0,0-1.486,0L8,27.394V17Z" fill="#019EE3"/>
+    <rect x="10" y="18" width="2" height="2" fill="#019EE3"/>
+    <rect x="28" y="15" width="12" height="2" fill="#019EE3"/>
+    <rect x="46" y="23" width="12" height="2" fill="#019EE3"/>
+    <rect x="42" y="15" width="16" height="2" fill="#019EE3"/>
+    <rect x="28" y="23" width="16" height="2" fill="#019EE3"/>
+    <rect x="28" y="19" width="30" height="2" fill="#019EE3"/>
+    <rect x="50" y="31" width="2" height="2" fill="#019EE3"/>
+    <rect x="6" y="33" width="4" height="2" fill="#019EE3"/>
+    <rect x="12" y="33" width="14" height="2" fill="#019EE3"/>
+  </g>
+</svg>

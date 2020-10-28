@@ -1,0 +1,24 @@
+@import "~normalize.css";
+@import "./css/fonts.css";
+@import "./css/variables.css";
+@import "./css/style.css";
+@import "./css/hover.css";
+
+
+
+@import "./css/module/header.css";
+@import "./css/module/banner.css";
+@import "./css/module/about.css";
+@import "./css/module/todo.css";
+@import "./css/module/portfolio.css";
+@import "./css/module/feedback.css";
+
+
+
+
+@import "./css/adaptation/min576.css";
+@import "./css/adaptation/min768.css";
+@import "./css/adaptation/min1024.css";
+@import "./css/adaptation/min1224.css";
+@import "./css/adaptation/min1824.css";
+
