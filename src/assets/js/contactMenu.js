@@ -8,6 +8,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const showButton = document.querySelector(".contact__btn");
   const hideButton = document.querySelector("#hide-contact");
   const menu = document.querySelector(".contact__menu");
+  
 
   if (window.innerWidth < 768) {
     menu.inert = true;

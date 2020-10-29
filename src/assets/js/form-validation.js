@@ -55,11 +55,13 @@ window.addEventListener("DOMContentLoaded", function () {
         callback: function () {
           alert("Данные отправлены.");
           const form = document.forms.contactUs;
+          const btn = document.querySelector(".feedback-form__btn")
           form.elements.name.value = "";
           form.elements.phoneNumber.value = "";
           form.elements.email.value = "";
           form.elements.text.value = "";
           form.elements.consent.checked = false;
+          btn.setAttribute("disabled", true);
         },        
       });
     },

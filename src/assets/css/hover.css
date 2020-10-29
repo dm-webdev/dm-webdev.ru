@@ -1,29 +1,47 @@
 .link_style {
+  -webkit-transition: -webkit-filter 0.1s,
+    -webkit-text-decoration 0.1s;
+  transition: -webkit-filter 0.1s,
+    -webkit-text-decoration 0.1s;
+  -o-transition: filter 0.1s,
+    text-decoration 0.1s;
   transition: filter 0.1s,
     text-decoration 0.1s;
+  transition: filter 0.1s,
+    text-decoration 0.1s,
+    -webkit-filter 0.1s,
+    -webkit-text-decoration 0.1s;
 }
 
 .link_style:hover,
 .link_style:active,
 .link_style:focus {
-  filter: invert(41%) sepia(70%) saturate(2357%) hue-rotate(171deg) brightness(99%) contrast(99%);  
+  -webkit-filter: invert(41%) sepia(70%) saturate(2357%) hue-rotate(171deg) brightness(99%) contrast(99%);
+          filter: invert(41%) sepia(70%) saturate(2357%) hue-rotate(171deg) brightness(99%) contrast(99%);  
   text-decoration: underline;
 }
 
 .link_style:focus {
-  box-shadow: 0 0 4px 2px var(--blue);
+  -webkit-box-shadow: 0 0 4px 2px var(--blue);
+          box-shadow: 0 0 4px 2px var(--blue);
 }
 
 .btn_style {
+  -webkit-transition: -webkit-filter 0.1s;
+  transition: -webkit-filter 0.1s;
+  -o-transition: filter 0.1s;
   transition: filter 0.1s;
+  transition: filter 0.1s, -webkit-filter 0.1s;
 }
 
 .btn_style:hover,
 .btn_style:active,
 .btn_style:focus {
-  filter: invert(41%) sepia(70%) saturate(2357%) hue-rotate(171deg) brightness(99%) contrast(99%);  
+  -webkit-filter: invert(41%) sepia(70%) saturate(2357%) hue-rotate(171deg) brightness(99%) contrast(99%);
+          filter: invert(41%) sepia(70%) saturate(2357%) hue-rotate(171deg) brightness(99%) contrast(99%);  
 }
 
 .btn_style:focus {
-  box-shadow: 0 0 4px 2px var(--blue);
+  -webkit-box-shadow: 0 0 4px 2px var(--blue);
+          box-shadow: 0 0 4px 2px var(--blue);
 }

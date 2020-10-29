@@ -9,8 +9,13 @@
 }
 
 .todo__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 
 .todo__heading {
@@ -19,8 +24,13 @@
 }
 
 .todo__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 21px;
@@ -54,7 +64,8 @@
 }
 
 .todo__btn {
-  align-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
 }
 
 

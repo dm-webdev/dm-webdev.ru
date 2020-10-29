@@ -29,7 +29,8 @@
   line-height: 21px;
   font-weight: 500;
   letter-spacing: 0.053em;  
-  box-shadow: 0 0 20px var(--shadow);
+  -webkit-box-shadow: 0 0 20px var(--shadow);  
+          box-shadow: 0 0 20px var(--shadow);
 }
 
 .about__item:not(:last-child) {

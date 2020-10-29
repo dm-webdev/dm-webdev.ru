@@ -8,9 +8,16 @@
 
 .banner {  
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-bottom: 50px;
 }  
 
@@ -25,9 +32,16 @@
   left: 0;
   right: 0;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 10%;
   padding-bottom: 10%;
 }
@@ -49,7 +63,8 @@
 }
 
 .banner__btn {
-  align-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
 }
 
 .btn {
@@ -63,21 +78,28 @@
   letter-spacing: 0.023em;
   color: var(--white);
   text-transform: uppercase;
+  -webkit-transition: background-color .2s;
+  -o-transition: background-color .2s;
   transition: background-color .2s;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .btn:focus,
 .btn:active,
 .btn:hover {
   background-color: var(--darkblue);
-  box-shadow: 0 0 5px 5px var(--blue);
+  -webkit-box-shadow: 0 0 5px 5px var(--blue);
+          box-shadow: 0 0 5px 5px var(--blue);
 }
 
 .btn:disabled {
   opacity: .4;
   background-color: var(--blue);
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   cursor: default;
 
 }

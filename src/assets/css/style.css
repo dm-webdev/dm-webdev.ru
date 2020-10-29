@@ -1,12 +1,14 @@
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 input,
@@ -72,6 +74,8 @@ ul {
 }
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -80,6 +84,7 @@ ul {
 }
 
 .sticky {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;

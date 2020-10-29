@@ -11,9 +11,9 @@ window.addEventListener("DOMContentLoaded", function () {
 
   if (window.innerWidth < 1224) {
     menu.inert = true;
-    showButton.addEventListener("click", show);
-    menu.addEventListener("click", hideOnClick);
-    document.addEventListener("keydown", hideOnPress);
+      showButton.addEventListener("click", show);
+      menu.addEventListener("click", hideOnClick);
+      document.addEventListener("keydown", hideOnPress);    
   } else {
     menu.inert = false;
   }

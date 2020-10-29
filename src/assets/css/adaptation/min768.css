@@ -31,8 +31,12 @@
   }
 
   .contact {
-    flex-flow: column nowrap;
-    align-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 
   .tel {
@@ -56,24 +60,41 @@
     position: relative;
     top: auto;
     right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     padding: 0;
     max-width: auto;
     width: auto;
     border: none;
     border-radius: 0;
     background-color: inherit;
-    transform: none;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    -o-transition: none;
     transition: none;
   }
 
   .contact__list {
     position: relative;
-    flex-flow: row nowrap;
-    align-content: flex-end;
-    align-items: center;
-    justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     padding: 0;
     background-color: transparent;
     border: none;
@@ -96,7 +117,8 @@
   }
 
   .contact__item:hover {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 
 
@@ -183,8 +205,13 @@
   }
 
   .todo__list {
-    flex-flow: row wrap;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .todo__item {
@@ -193,7 +220,8 @@
   }
 
   .todo__btn {
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 
   /*portfolio*/
@@ -209,7 +237,8 @@
   }
 
   .portfolio__link {
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 
   /*feedback*/
