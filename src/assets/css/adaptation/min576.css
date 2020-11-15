@@ -88,6 +88,7 @@
   }
 
   .btn {
+    padding: 8px 20px;
     font-size: 14px;
     line-height: 32px;
   }
@@ -95,7 +96,7 @@
   /*about*/
 
   .section_heading {
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 0.067em;
   }
 
@@ -107,12 +108,12 @@
   }
 
   .social__item:not(:last-child) {
-    margin-right: 15px;
+    margin-right: 20px;
   }
 
   .social__link {
-    padding: 17px;
-    background-size: auto 25px;
+    padding: 25px;
+    background-size: auto 40px;
   }
 
   /*todo*/
@@ -123,6 +124,7 @@
 
   .todo__item {
     padding: 85px 20% 25px 20%; 
+    background-size: 80px 80px;
   }
 
   /*portfolio*/
@@ -134,6 +136,7 @@
   /*feedback*/
 
   .feedback {
+    padding-bottom: 25px;
     background-image: url('../../img/feedback/feedback_bg-s-min.jpg');
   }
 
@@ -175,12 +178,11 @@
   }
 
   .copi {
-    padding: 25px 0 15px 0;
     line-height: 27px;
   }
 
   .js-validate-error-label {
-    font-size: 14px;
+    font-size: 13px;
   }
 
 }

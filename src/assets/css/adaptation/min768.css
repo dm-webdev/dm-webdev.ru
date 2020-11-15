@@ -173,16 +173,28 @@
 
   /*about*/
 
+  .about {
+    margin-bottom: 30px;
+  }
+
   .section_heading {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 36px;
     letter-spacing: 0.053em;
   }
 
+  .about__heading {
+    margin-bottom: 30px;
+  }
+
+  .about__list {
+    margin-bottom: 30px;
+}
+
   .about__item,
   .todo__list {
     padding: 30px;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     letter-spacing: 0;
   }
@@ -193,7 +205,6 @@
 
   .social__link {
     padding: 20px;
-    background-size: auto 30px;
   }
 
   /*todo*/

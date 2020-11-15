@@ -1,6 +1,6 @@
 
 .feedback {
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
   background-image: url('../../img/feedback/feedback_bg-xs-min.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 }
 
 .feedback-form__bar {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .feedback-form {
@@ -54,12 +54,13 @@
 
 .feedback-form__wrap {
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .js-validate-error-label {
   position: absolute;
   bottom: 0;
+  left: 15px;
   color: var(--alarm);
   font-size: 12px;
   line-height: 15px;
@@ -379,8 +380,9 @@
 }
 
 .copi {
-  padding: 20px 0 10px 0;
+  padding: 15px 0 15px 0;
   text-align: center;
+  font-size: 12px;
   letter-spacing: 0.067em;
   line-height: 27px;
   color: var(--white);

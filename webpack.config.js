@@ -53,7 +53,7 @@ module.exports = {
 
     new CleanWebpackPlugin(),
 
-    new FaviconsWebpackPlugin("./favicon/favicon.svg"),
+    new FaviconsWebpackPlugin("./favicon/favicon.png"),
 
     new MiniCssExtractPlugin({
       filename: devMode ? "styles/[name].css" : "styles/[name].[hash].css",

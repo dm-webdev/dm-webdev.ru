@@ -16,8 +16,8 @@
 .link_style:hover,
 .link_style:active,
 .link_style:focus {
-  -webkit-filter: invert(41%) sepia(70%) saturate(2357%) hue-rotate(171deg) brightness(99%) contrast(99%);
-          filter: invert(41%) sepia(70%) saturate(2357%) hue-rotate(171deg) brightness(99%) contrast(99%);  
+          -webkit-filter: drop-shadow(0 0 5px var(--blue));
+                  filter: drop-shadow(0 0 5px var(--blue));
   text-decoration: underline;
 }
 

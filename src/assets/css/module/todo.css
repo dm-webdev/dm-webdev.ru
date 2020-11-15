@@ -1,6 +1,6 @@
 .todo {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   color: var(--background);
   background-color: var(--darkblue);
   background-image: url("../../img/todo/todo_bg-xs-min.jpg");
@@ -31,7 +31,7 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
@@ -44,7 +44,7 @@
   text-align: center;
   background-repeat: no-repeat;
   background-position: center 0;
-  background-size: 80px 80px;
+  background-size: 70px 70px;
 }
 
 .layout {
