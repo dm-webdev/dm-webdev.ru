@@ -4,11 +4,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-top: 5px;
 }
 
@@ -33,8 +33,8 @@
   height: 3px;
   background: var(--darkblue);
   -webkit-transform-origin: left;
-      -ms-transform-origin: left;
-          transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
   -webkit-transition: background 0.1s,
     -webkit-transform 0.1s;
   transition: background 0.1s,
@@ -61,8 +61,8 @@
 .burger:focus.burger::before {
   background: var(--blue);
   -webkit-transform: scaleX(0.55);
-      -ms-transform: scaleX(0.55);
-          transform: scaleX(0.55);
+  -ms-transform: scaleX(0.55);
+  transform: scaleX(0.55);
 }
 
 .burger:hover,
@@ -76,13 +76,13 @@
 .burger:focus.burger::after {
   background: var(--blue);
   -webkit-transform: scaleX(0.8);
-      -ms-transform: scaleX(0.8);
-          transform: scaleX(0.8);
+  -ms-transform: scaleX(0.8);
+  transform: scaleX(0.8);
 }
 
 .burger:focus {
   -webkit-box-shadow: 0 0 4px 2px var(--blue);
-          box-shadow: 0 0 4px 2px var(--blue);
+  box-shadow: 0 0 4px 2px var(--blue);
 }
 
 .header-logo__img {
@@ -91,7 +91,7 @@
 
 .header-logo:focus {
   -webkit-box-shadow: 0 0 4px 2px var(--darkblue);
-          box-shadow: 0 0 4px 2px var(--darkblue);
+  box-shadow: 0 0 4px 2px var(--darkblue);
 }
 
 /* ------------menu------------------*/
@@ -106,8 +106,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
   padding: 10px;
   max-width: 320px;
   border: 1px solid var(--grey);
@@ -116,8 +116,8 @@
   letter-spacing: calc(0.7em/16);
   background-color: var(--background);
   -webkit-transform: translateX(-120%);
-      -ms-transform: translateX(-120%);
-          transform: translateX(-120%);
+  -ms-transform: translateX(-120%);
+  transform: translateX(-120%);
   -webkit-transition: -webkit-transform 0.7s;
   transition: -webkit-transform 0.7s;
   -o-transition: transform 0.7s;
@@ -129,11 +129,11 @@
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  -o-transition: transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  -o-transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
 }
 
 .menu-bar {
@@ -142,11 +142,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .menu-bar__logo {
@@ -168,8 +168,8 @@
   height: 2px;
   background-color: var(--darkblue);
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .hide-btn::after {
@@ -180,8 +180,8 @@
   height: 2px;
   background-color: var(--darkblue);
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .menu__list {
@@ -190,11 +190,11 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .menu__item {
@@ -233,16 +233,16 @@
 
 .contact {
   -ms-flex-item-align: stretch;
-      align-self: stretch;
+  align-self: stretch;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .tel {
@@ -252,7 +252,7 @@
 
 .contact__btn {
   -ms-flex-item-align: stretch;
-      align-self: stretch;
+  align-self: stretch;
   padding: 13px 15px;
   border: none;
   background-color: inherit;
@@ -287,22 +287,22 @@
   -webkit-transform: translateY(-120%);
       -ms-transform: translateY(-120%);
           transform: translateY(-120%);
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  -o-transition: transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  -o-transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
 }
 
 .contact_show {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  -o-transition: transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  -o-transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
 }
 
 .contact__list {
@@ -311,11 +311,11 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .contact__item {
@@ -329,25 +329,25 @@
 .contact__link {
   display: block;
   padding: 50px 0 20px 0;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: 30px 30px;
   background-position: center 15px;
 }
 
 .telegram {
-  background-image: url('../../img/telegram.svg'); 
+  background-image: url('../../img/telegram.svg');
 }
 
 .whatsapp {
-  background-image: url('../../img/whatsapp.svg');  
+  background-image: url('../../img/whatsapp.svg');
 }
 
 .viber {
-  background-image: url('../../img/viber.svg'); 
+  background-image: url('../../img/viber.svg');
 }
 
 .mail {
-  background-image: url('../../img/email.svg');  
+  background-image: url('../../img/email.svg');
 }
 
 .github {
@@ -366,5 +366,5 @@
 .contact__item:hover,
 .menu__item:hover {
   -webkit-box-shadow: 0 0 4px 2px var(--blue);
-          box-shadow: 0 0 4px 2px var(--blue);
+  box-shadow: 0 0 4px 2px var(--blue);
 }

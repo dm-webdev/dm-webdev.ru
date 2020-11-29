@@ -48,7 +48,7 @@ module.exports = {
       filename: path.resolve(__dirname, "build/index.html"),
       template: "./assets/index.html",
       scriptLoading: "defer",
-      minify: "auto",
+      minify: false,
     }),
 
     new CleanWebpackPlugin(),
@@ -81,11 +81,29 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpeg|jpg|svg|gif|webp)$/i,
+        test: /\.(png|jpeg|jpg|gif|webp|header-logo.svg)$/i,
         loader: "file-loader",
         options: {
           outputPath: "img",
           name: devMode ? "[name].[ext]" : "[name].[hash].[ext]",
+        },
+      },
+      {
+        test: /header-logo.svg/,
+        loader: "file-loader",
+        options: {
+          outputPath: "img",
+          name: devMode ? "[name].[ext]" : "[name].[hash].[ext]",
+        },
+      },
+      {
+        test: /\.svg/,
+        exclude: /header-logo.svg/,
+        use: {
+          loader: "svg-url-loader",          
+          options: {
+            iesafe: true,
+          },
         },
       },
       {
