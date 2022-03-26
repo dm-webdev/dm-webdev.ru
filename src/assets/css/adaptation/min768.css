@@ -148,19 +148,17 @@
   }
 
   .banner__wrap {
-    padding-top: 12%;
-    padding-bottom: 12%;
+    padding-top: 7%;
+    padding-bottom: 10%;
   }
 
   .banner__header {
-    padding-right: 40%;
     font-size: 2.5em;
     line-height: 52px;
     letter-spacing: 0.097em;
   }
 
   .banner__desk {
-    padding-right: 30%;
     font-size: 20px;
     line-height: 30px;
   }

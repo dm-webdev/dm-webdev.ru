@@ -99,6 +99,7 @@
 
   .banner__desk {
     padding-left: 5%;
+    max-width: 500px;
     font-size: 23px;
   }
 

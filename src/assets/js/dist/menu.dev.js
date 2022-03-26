@@ -1,16 +1,17 @@
 "use strict";
 
-import "wicg-inert";
-import { showMenu } from "../../utils/js/showMenu";
-import { hideMenu } from "../../utils/js/hideMenu";
+require("wicg-inert");
+
+var _showMenu = require("../../utils/js/showMenu");
+
+var _hideMenu = require("../../utils/js/hideMenu");
 
 window.addEventListener("DOMContentLoaded", function () {
-  const showButton = document.querySelector(".contact__btn");
-  const hideButton = document.querySelector("#hide-contact");
-  const menu = document.querySelector(".contact__menu");
-  
+  var showButton = document.querySelector(".burger");
+  var hideButton = document.querySelector("#hide-menu");
+  var menu = document.querySelector(".menu");
 
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 1224) {
     menu.inert = true;
     showButton.addEventListener("click", show);
     menu.addEventListener("click", hideOnClick);
@@ -19,9 +20,9 @@ window.addEventListener("DOMContentLoaded", function () {
     menu.inert = false;
   }
 
-  window.addEventListener("resize", () => {
-    if (window.innerWidth < 768) {
-      if (!menu.classList.contains("contact_show")) {
+  window.addEventListener("resize", function () {
+    if (window.innerWidth < 1224) {
+      if (!menu.classList.contains("menu_show")) {
         menu.inert = true;
         showButton.addEventListener("click", show);
         menu.addEventListener("click", hideOnClick);
@@ -36,22 +37,26 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   function show() {
-    showMenu(menu, "contact_show", showButton);
+    (0, _showMenu.showMenu)(menu, "menu_show", showButton);
   }
 
+  ;
+
   function hideOnClick(ev) {
-    if (
-      ev.target == hideButton ||
-      ev.target.tagName == "A" ||
-      ev.target.tagName == "SPAN"
-    ) {
-      hideMenu(menu, "contact_show", showButton);
+    if (ev.target == hideButton || ev.target.tagName == "A" || ev.target.tagName == "SPAN") {
+      (0, _hideMenu.hideMenu)(menu, "menu_show", showButton);
     }
+
+    ;
   }
+
+  ;
 
   function hideOnPress(ev) {
     if (ev.code == "Escape") {
-      hideMenu(menu, "contact_show", showButton);
+      (0, _hideMenu.hideMenu)(menu, "menu_show", showButton);
     }
   }
+
+  ;
 });

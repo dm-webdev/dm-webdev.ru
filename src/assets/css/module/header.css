@@ -35,16 +35,16 @@
   -webkit-transform-origin: left;
   -ms-transform-origin: left;
   transform-origin: left;
-  -webkit-transition: background 0.1s,
+  -webkit-transition: background-color 0.1s,
     -webkit-transform 0.1s;
-  transition: background 0.1s,
+  transition: background-color 0.1s,
     -webkit-transform 0.1s;
   -o-transition: transform 0.1s,
-    background 0.1s;
+    background-color 0.1s;
   transition: transform 0.1s,
-    background 0.1s;
+    background-color 0.1s;
   transition: transform 0.1s,
-    background 0.1s,
+    background-color 0.1s,
     -webkit-transform 0.1s;
 }
 
@@ -59,7 +59,7 @@
 .burger:hover.burger::before,
 .burger:active.burger::before,
 .burger:focus.burger::before {
-  background: var(--blue);
+  background-color: var(--blue);
   -webkit-transform: scaleX(0.55);
   -ms-transform: scaleX(0.55);
   transform: scaleX(0.55);
@@ -127,8 +127,8 @@
 
 .menu_show {
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
   -webkit-transition: -webkit-transform 0.7s ease-in-out;
   transition: -webkit-transform 0.7s ease-in-out;
   -o-transition: transform 0.7s ease-in-out;
@@ -274,8 +274,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
   padding: 10px;
   max-width: 320px;
   width: 90%;
@@ -285,8 +285,8 @@
   letter-spacing: calc(0.7em/16);
   background-color: var(--background);
   -webkit-transform: translateY(-120%);
-      -ms-transform: translateY(-120%);
-          transform: translateY(-120%);
+  -ms-transform: translateY(-120%);
+  transform: translateY(-120%);
   -webkit-transition: -webkit-transform 0.7s ease-in-out;
   transition: -webkit-transform 0.7s ease-in-out;
   -o-transition: transform 0.7s ease-in-out;
@@ -296,8 +296,8 @@
 
 .contact_show {
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
   -webkit-transition: -webkit-transform 0.7s ease-in-out;
   transition: -webkit-transform 0.7s ease-in-out;
   -o-transition: transform 0.7s ease-in-out;
